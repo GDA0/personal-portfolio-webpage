@@ -1,0 +1,15 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+@media screen {
+    body {
+        max-width: 720px;
+    }
+}
