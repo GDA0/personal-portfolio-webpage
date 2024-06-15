@@ -1,15 +1,9 @@
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&&family=Roboto&family=Montserrat&display=swap');
+
+.navbar-toggler {
+	border: none;
 }
 
-#welcome-section {
-    height: 100vh;
-}
-
-@media screen {
-    body {
-        max-width: 720px;
-    }
+.navbar-toggler:focus {
+	box-shadow: unset;
 }
