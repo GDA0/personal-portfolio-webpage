@@ -36,7 +36,7 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body class="bg-body-secondary">
+	<body class="bg-light">
 		<header>
 			<nav
 				class="navbar navbar-expand-md fixed-top border-bottom border-3 bg-body-tertiary"
@@ -64,14 +64,183 @@
 					>
 						<div class="navbar-nav ms-auto px-3 fw-bold fs-4">
 							<a class="nav-link" href="#">Home</a>
-							<a class="nav-link" href="#projects">Projects</a>
-							<a class="nav-link" href="#contact">Contact</a>
+							<a class="nav-link" href="#projects-section"
+								>Projects</a
+							>
+							<a class="nav-link" href="#contact-section"
+								>Contact</a
+							>
 						</div>
 					</div>
 				</div>
 			</nav>
 		</header>
-		<main></main>
+		<main>
+			<section
+				id="welcome-section"
+				class="d-flex align-items-center justify-content-center vh-100"
+			>
+				<div class="container text-center">
+					<h1 class="display-3 mb-3">Welcome to My Portfolio</h1>
+					<p class="lead mb-4">
+						Hi, I'm Gideon Delali Adeti, a Full-stack Web Developer
+						specializing in the MERN stack.
+					</p>
+					<a href="#projects-section" class="btn btn-primary btn-lg"
+						>View My Work</a
+					>
+				</div>
+			</section>
+			<section id="projects-section" class="my-5 py-5 bg-white">
+				<div class="container my-4 my-md-5 pb-4">
+					<h2 class="text-center display-5 mb-5">My Projects</h2>
+					<div class="row">
+						<div class="col-md-4 mb-4">
+							<div class="card h-100">
+								<img
+									src="assets/screenshots/product-landing-page-screenshot.png"
+									class="card-img-top"
+									alt="Product Landing Page screenshot"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">
+										Product Landing Page
+									</h5>
+									<p class="card-text">
+										This project was built to market a
+										product (MyFitnessPal).
+									</p>
+									<a
+										href="https://gda0.github.io/product-landing-page/"
+										class="btn btn-primary"
+										target="_blank"
+										>View Project</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="card h-100">
+								<img
+									src="assets/screenshots/survey-form-screenshot.png"
+									class="card-img-top"
+									alt="Survey Form screenshot"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Survey Form</h5>
+									<p class="card-text">
+										This project was built to collect data
+										from users.
+									</p>
+									<a
+										href="https://gda0.github.io/survey-form/"
+										class="btn btn-primary"
+										target="_blank"
+										>View Project</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="card h-100">
+								<img
+									src="assets/screenshots/tribute-page-screenshot.png"
+									class="card-img-top"
+									alt="Tribute Page screenshot"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">Tribute Page</h5>
+									<p class="card-text">
+										A Tribute Page Built for Meursault (The
+										Stranger).
+									</p>
+									<a
+										href="https://gda0.github.io/tribute-page/"
+										class="btn btn-primary"
+										target="_blank"
+										>View Project</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact-section" class="py-5">
+				<div class="container">
+					<h2 class="text-center display-5 mb-5">Contact Me</h2>
+					<div class="row justify-content-center">
+						<div class="col-md-8">
+							<form class="needs-validation" novalidate>
+								<div class="mb-3">
+									<label for="name" class="form-label"
+										>Name</label
+									>
+									<input
+										type="text"
+										class="form-control"
+										id="name"
+										placeholder="E.g. John Doe"
+										required
+									/>
+									<div class="valid-feedback">
+										Looks good!
+									</div>
+									<div class="invalid-feedback">
+										Please enter your name.
+									</div>
+								</div>
+								<div class="mb-3">
+									<label for="email" class="form-label"
+										>Email</label
+									>
+									<input
+										type="email"
+										class="form-control"
+										id="email"
+										placeholder="E.g. johndoe@example.com"
+										required
+									/>
+									<div class="valid-feedback">
+										Looks good!
+									</div>
+									<div class="invalid-feedback">
+										Please enter a valid email. E.g.
+										johndoe@example.com
+									</div>
+								</div>
+								<div class="mb-3">
+									<label for="message" class="form-label"
+										>Message</label
+									>
+									<textarea
+										class="form-control"
+										id="message"
+										rows="5"
+										placeholder="Your Message"
+										required
+									></textarea>
+									<div class="valid-feedback">
+										Looks good!
+									</div>
+									<div class="invalid-feedback">
+										Please enter your message.
+									</div>
+								</div>
+								<div class="text-center">
+									<button
+										type="submit"
+										class="btn btn-primary"
+									>
+										Send Message
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer></footer>
 
 		<!-- Bootstrap JS -->
@@ -80,5 +249,8 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
+
+		<!-- Custom JS -->
+		<script src="script.js"></script>
 	</body>
 </html>

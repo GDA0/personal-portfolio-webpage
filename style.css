@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&&family=Roboto&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 
 .navbar-toggler {
 	border: none;
@@ -6,4 +6,10 @@
 
 .navbar-toggler:focus {
 	box-shadow: unset;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	transform: translateY(-4px);
+	transition: all 0.3s ease-in-out;
 }
